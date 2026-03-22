@@ -1,45 +1,15 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import { Autoplay } from "swiper/modules";
+import Hero from "../components/Hero";
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
     <>
-    <div className="w-full h-screen">
-      <Swiper
-        className="h-full w-full"
-        spaceBetween={0}
-        centeredSlides={true}
-        loop={true}
-        autoplay={{
-          delay: 60000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-      >
-        <SwiperSlide>
-          <video src="/first.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <video src="/second.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <video src="/third.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <video src="/fourth.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
-    <div className="h-screen w-full bg-[#09090b] md:px-10 py-10">
-        <h1 className=" text-white font-medium">Now Showing</h1>
+    <div className="relative w-full min-h-screen">
+      <div className="absolute top-0 left-0 w-full z-50">
+        <Navbar />
+      </div>
+      <Hero />
     </div>
     </>
   );

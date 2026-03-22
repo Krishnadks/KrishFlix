@@ -1,31 +1,56 @@
 import { useState } from "react";
 import { Search, TicketPlus } from "lucide-react";
 import { useClerk, UserButton, useUser } from "@clerk/react";
-import {useNavigate , Link} from 'react-router-dom'
-
-
+import { useNavigate, Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { user } = useUser();
   const { openSignIn } = useClerk();
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   return (
     <div className="w-full fixed px-4 sm:px-6 md:px-10 py-5 flex items-center justify-between text-white">
-      <Link to='/'>
-      <img src="/logo.jpeg" alt="logo" className="w-28 sm:w-32 md:w-40" />
+      <Link to="/">
+        <img src="/logo.jpeg" alt="logo" className="w-28 sm:w-32 md:w-40" />
       </Link>
       <ol
         className="hidden md:flex gap-8 lg:gap-10 px-6 lg:px-10 py-3 rounded-full 
         bg-white/10 backdrop-blur-lg border border-white/20 font-medium"
       >
-        <li className="cursor-pointer hover:text-red-400">Home</li>
-        <li className="cursor-pointer hover:text-red-400">Movies</li>
-        <li className="cursor-pointer hover:text-red-400">Theaters</li>
-        <li className="cursor-pointer hover:text-red-400">Releases</li>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive ? "text-red-400 " : "text-white hover:text-rose-300"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to={"/movies"}
+          className={({ isActive }) =>
+            isActive ? "text-red-400" : "text-white hover:text-rose-300"
+          }
+        >
+          Movies
+        </NavLink>
+        <NavLink
+          to={"/favorite"}
+          className={({ isActive }) =>
+            isActive ? "text-red-400" : "text-white hover:text-rose-300"
+          }
+        >
+          Theaters
+        </NavLink>
+        <NavLink
+          to={"/moviedetails"}
+          className={({ isActive }) =>
+            isActive ? "text-red-400" : "text-white hover:text-rose-300"
+          }
+        >
+          Releases
+        </NavLink>
       </ol>
       <div className="flex items-center gap-3 sm:gap-5">
         <Search className="hidden sm:block cursor-pointer" />
@@ -40,7 +65,11 @@ const Navbar = () => {
         ) : (
           <UserButton>
             <UserButton.MenuItems>
-              <UserButton.Action label="My Bookings" labelIcon = {<TicketPlus width={15}/>} onClick={()=>navigate('/mybooking')}/>
+              <UserButton.Action
+                label="My Bookings"
+                labelIcon={<TicketPlus width={15} />}
+                onClick={() => navigate("/mybooking")}
+              />
             </UserButton.MenuItems>
           </UserButton>
         )}
