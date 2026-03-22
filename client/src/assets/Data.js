@@ -1,10 +1,10 @@
 export const data = [
     {
-        Title: "Dhurandhar: The Revenge (2026)",
+        Title: "Dhurandhar: The Revenge",
         Year: "2026",
         Rated: "PG-18",
         Released: "19 Mar 2026",
-        Runtime: "240 min",
+        Runtime: "230",
         Genre: "Action, Crime, Thriller",
         Director: "Adiya Dhar",
         Writer: "Aditya Dhar",
@@ -21,11 +21,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/TL54gfZC81yvUrdSGMmykwLrN5.jpg"
         ]
     },{
-        Title: "Crime 101 (2026)",
+        Title: "Crime 101",
         Year: "2026",
         Rated: "PG-13",
         Released: "13 Feb 2026",
-        Runtime: "141 min",
+        Runtime: "141",
         Genre: "Crime, Thriller",
         Director: "Bart Layton",
         Writer: "Bart Layton",
@@ -43,11 +43,11 @@ export const data = [
         ]
     },{
 
-        Title: "Hoppers (2026)",
+        Title: "Hoppers",
         Year: "2026",
         Rated: "PG-7",
         Released: "6 Mar 2026",
-        Runtime: "105 min",
+        Runtime: "105",
         Genre: "Animation, Family, Science Fiction",
         Director: "Daniel Chong",
         Writer: "Daniel Chong",
@@ -64,11 +64,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/A5HG1ctEAUSaZgOZlWsnbuX7MOJ.jpg"
         ]
     },{
-        Title: "Hamnet (2025)",
+        Title: "Hamnet",
         Year: "2026",
         Rated: "PG-16",
         Released: "27 Feb 2026",
-        Runtime: "126 min",
+        Runtime: "126",
         Genre: "Drama, Romance, and History",
         Director: "Chloé Zhao",
         Writer: "Chloé Zhao",
@@ -85,11 +85,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/lnAVu7rcqn6j4vlssiao1h4nyYJ.jpg"
         ]
     },{
-        Title: "Wuthering Heights (2026)",
+        Title: "Wuthering Heights",
         Year: "2026",
         Rated: "PG-18",
         Released: "27 Feb 2026",
-        Runtime: "136 min",
+        Runtime: "136",
         Genre: "Romance and Drama",
         Director: "Emerald Fennell",
         Writer: "Emerald Fennell",
@@ -106,11 +106,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/qgNOnNvMeKbSbtUT8MwB0baobwG.jpg"
         ]
     },{
-        Title: "War Machine (2026)",
+        Title: "War Machine",
         Year: "2026",
         Rated: "PG-16",
         Released: "6 Mar 2026",
-        Runtime: "110 min",
+        Runtime: "110",
         Genre: "Action, Science Fiction, and Thriller",
         Director: "Patrick Hughes",
         Writer: "Patrick Hughes",
@@ -127,11 +127,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/2fRdKahUK3lqADE6ipT1GlQyvoY.jpg"
         ]
     },{
-        Title: "Project Hail Mary (2026)",
+        Title: "Project Hail Mary",
         Year: "2026",
         Rated: "PG-13",
         Released: "26 Mar 2026",
-        Runtime: "157 min",
+        Runtime: "157",
         Genre: "Science Fiction, Adventure, and Mystery",
         Director: "Phil Lord",
         Writer: "Drew Goddard",
@@ -148,11 +148,11 @@ export const data = [
             "https://image.tmdb.org/t/p/original/qjLiHYCzCfgqeyZlcKKNHk1eLHa.jpg"
         ]
     },{
-        Title: "Bhooth Bangla (2026)",
+        Title: "Bhooth Bangla",
         Year: "2026",
         Rated: "PG-13",
         Released: "10 Apr 2026",
-        Runtime: "__ min",
+        Runtime: "173",
         Genre: "Horror and Comedy",
         Director: "Priyadarshan",
         Writer: "Abhilash Nair",
@@ -168,4 +168,24 @@ export const data = [
             "https://image.tmdb.org/t/p/original/pzDmQHNzE9j9yUOQZjlIL5YaQnj.jpg"
         ]
     }
+]
+
+
+export const dummyTrailers = [
+    {
+        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+    },
+    {
+        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
+    },
+    {
+        image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=1pHDWnXmK7Y'
+    },
+    {
+        image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=umiKiW4En9g'
+    },
 ]

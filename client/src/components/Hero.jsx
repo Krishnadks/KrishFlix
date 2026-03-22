@@ -5,6 +5,8 @@ import "swiper/css/navigation";
 import { ArrowRight, CalendarIcon, ClockIcon } from "lucide-react";
 
 import { Autoplay } from "swiper/modules";
+import FeaturedSection from "./FeaturedSection";
+import TrailerSection from './TrailerSection';
 
 const Hero = () => {
   return (
@@ -49,8 +51,8 @@ const Hero = () => {
                   claim the feared title "Sher-e-Baloch" while balancing
                   loyalty, betrayal, and survival in a ruthless underworld.
                 </p>
-                <button className="hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
-                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75" />
+                <button className="hover:scale-102 mt-5 group px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
+                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75 group-hover:translate-x-0.5 transition" />
                 </button>
               </div>
             </div>
@@ -82,8 +84,8 @@ const Hero = () => {
                   Bhooth Bangla is an upcoming horror-comedy film starring
                   Akshay Kumar, directed by Priyadarshan.
                 </p>
-                <button className="hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
-                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75" />
+                <button className=" group hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
+                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75 group-hover:translate-x-0.5 transition" />
                 </button>
               </div>
             </div>
@@ -120,8 +122,8 @@ const Hero = () => {
                   detective closes in on the operation, raising the stakes even
                   higher.
                 </p>
-                <button className="hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
-                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75" />
+                <button className="group hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
+                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75 group-hover:translate-x-0.5 transition" />
                 </button>
               </div>
             </div>
@@ -155,17 +157,16 @@ const Hero = () => {
                   mission to stop a mysterious substance killing the sun, and
                   save Earth. An unexpected friendship may be the key.
                 </p>
-                <button className="hover:scale-102 mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
-                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75" />
+                <button className="hover:scale-102 group mt-5 px-6 py-2.5 bg-[#f84565]/80 rounded-full w-fit flex items-center justify-center gap-2">
+                  Explore Movies <ArrowRight className="h-4 w-4 mt-0.75 group-hover:translate-x-0.5 transition" />
                 </button>
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="h-screen w-full bg-[#09090b] md:px-10 py-10">
-        <h1 className=" text-white font-medium">Now Showing</h1>
-      </div>
+      <FeaturedSection/>
+      <TrailerSection/>
     </>
   );
 };
