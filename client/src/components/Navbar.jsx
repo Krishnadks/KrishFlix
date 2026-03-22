@@ -1,16 +1,23 @@
 import { useState } from "react";
-import { Search } from "lucide-react";
+import { Search, TicketPlus } from "lucide-react";
 import { useClerk, UserButton, useUser } from "@clerk/react";
+import {useNavigate , Link} from 'react-router-dom'
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { user } = useUser();
   const { openSignIn } = useClerk();
+  const navigate = useNavigate()
+
 
   return (
     <div className="w-full fixed px-4 sm:px-6 md:px-10 py-5 flex items-center justify-between text-white">
+      <Link to='/'>
       <img src="/logo.jpeg" alt="logo" className="w-28 sm:w-32 md:w-40" />
+      </Link>
       <ol
         className="hidden md:flex gap-8 lg:gap-10 px-6 lg:px-10 py-3 rounded-full 
         bg-white/10 backdrop-blur-lg border border-white/20 font-medium"
@@ -31,7 +38,11 @@ const Navbar = () => {
             Login
           </button>
         ) : (
-          <UserButton />
+          <UserButton>
+            <UserButton.MenuItems>
+              <UserButton.Action label="My Bookings" labelIcon = {<TicketPlus width={15}/>} onClick={()=>navigate('/mybooking')}/>
+            </UserButton.MenuItems>
+          </UserButton>
         )}
 
         <button className="md:hidden">
