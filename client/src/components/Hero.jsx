@@ -7,6 +7,7 @@ import { ArrowRight, CalendarIcon, ClockIcon } from "lucide-react";
 import { Autoplay } from "swiper/modules";
 import FeaturedSection from "./FeaturedSection";
 import TrailerSection from './TrailerSection';
+import Footer from './Footer';
 
 const Hero = () => {
   return (
@@ -167,6 +168,7 @@ const Hero = () => {
       </div>
       <FeaturedSection/>
       <TrailerSection/>
+      <Footer/>
     </>
   );
 };

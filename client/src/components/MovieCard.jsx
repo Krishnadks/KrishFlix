@@ -19,7 +19,7 @@ const MovieCard = () => {
         <img
           onClick={() => navigate("/moviedetails")}
           src={d.Poster}
-          className="w-[96%] h-70 ml-[2%] object-center rounded"
+          className="w-[96%] h-70 ml-[2%] object-center rounded cursor-pointer"
         />
         <h1 className="mt-2 ml-2">{d.Title}</h1>
         <p className="text-sm ml-2 mt-2 text-gray-400">
