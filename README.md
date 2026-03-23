@@ -99,7 +99,7 @@ If you like this project, consider giving it a star ⭐
 ---
 
 <p align="center">
-  Made with ❤️ by Krishna -
+  Made with ❤️ by Krishna 
 </p>
 
 <!-- BOTTOM WAVE -->
