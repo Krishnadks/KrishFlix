@@ -6,7 +6,17 @@ import { PlayCircleIcon } from "lucide-react";
 const TrailerSection = () => {
   const [currentTrailer, setcurrentTrailer] = useState(dummyTrailers[0]);
   const getYouTubeEmbedUrl = (url) => {
-    return url.replace("watch?v=", "embed/");
+    if (!url) return "";
+
+    let videoId = "";
+
+    if (url.includes("watch?v=")) {
+      videoId = url.split("v=")[1].split("&")[0];
+    } else if (url.includes("youtu.be/")) {
+      videoId = url.split("youtu.be/")[1].split("?")[0];
+    }
+
+    return `https://www.youtube.com/embed/${videoId}`;
   };
 
   return (
@@ -18,6 +28,7 @@ const TrailerSection = () => {
       <div className="relative mt-6">
         <div className="mx-auto w-full max-w-4xl aspect-video">
           <iframe
+            key={currentTrailer.videoUrl}
             src={getYouTubeEmbedUrl(currentTrailer.videoUrl)}
             className="w-full h-full rounded-xl"
             allow="autoplay; encrypted-media"
@@ -29,7 +40,7 @@ const TrailerSection = () => {
         {dummyTrailers.map((trailer) => (
           <div
             key={trailer.image}
-            onClick={()=> setcurrentTrailer(trailer)}
+            onClick={() => setcurrentTrailer(trailer)}
             className="z-10 flex-wrap relative group-hover:not-hover:opacity-50 hover:translate-y-1 duration-300 transition max-md:h-60 md:max-h-60 cursor-pointer"
           >
             <img

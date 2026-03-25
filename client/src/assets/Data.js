@@ -173,19 +173,19 @@ export const data = [
 
 export const dummyTrailers = [
     {
-        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+        image: "https://img.youtube.com/vi/n7f6hlKsxxo/maxresdefault.jpg",
+        videoUrl: 'https://youtu.be/n7f6hlKsxxo'
     },
     {
-        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
+        image: "https://img.youtube.com/vi/3_9vCamtuPY/maxresdefault.jpg",
+        videoUrl: 'https://youtu.be/3_9vCamtuPY'
     },
     {
-        image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=1pHDWnXmK7Y'
+        image: "https://img.youtube.com/vi/QdLExXYsyQw/maxresdefault.jpg",
+        videoUrl: 'https://youtu.be/QdLExXYsyQw'
     },
     {
-        image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=umiKiW4En9g'
+        image: "https://img.youtube.com/vi/cXymbHU5i-U/maxresdefault.jpg",
+        videoUrl: 'https://youtu.be/cXymbHU5i-U'
     },
 ]

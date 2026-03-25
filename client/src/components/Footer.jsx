@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="bg-[#09090b] relative px-6 lg:px-24 xl:px-24 text-gray-300 overflow-hidden">
       <BlurCircle top='0' right='-50px'/>
       <div className="w-full flex-wrap gap-2 py-20 flex justify-between ">
-        <div className="md:max-w-100 flex flex-col gap-2">
+        <div className="md:max-w-100 z-5 flex flex-col gap-2">
           <img src="/logo.jpeg" alt="logo" className="w-36 h-auto" />
           <p className="text-sm">
             KrishFlix is your go-to platform for easy movie ticket booking.
