@@ -36,7 +36,7 @@ const Navbar = () => {
           Movies
         </NavLink>
         <NavLink
-          to={"/favorite"}
+          to={"/theaters"}
           className={({ isActive }) =>
             isActive ? "text-red-400" : "text-white hover:text-rose-300"
           }
@@ -44,12 +44,12 @@ const Navbar = () => {
           Theaters
         </NavLink>
         <NavLink
-          to={"/moviedetails"}
+          to={"/comingsoon"}
           className={({ isActive }) =>
             isActive ? "text-red-400" : "text-white hover:text-rose-300"
           }
         >
-          Releases
+          Coming Soon
         </NavLink>
       </ol>
       <div className="flex items-center gap-3 sm:gap-5">
@@ -105,14 +105,14 @@ const Navbar = () => {
   ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
         style={{ transformOrigin: "top left" }}
       >
-        <p className="hover:scale-110 hover:text-red-400 transition">Home</p>
-        <p className="hover:scale-110 hover:text-red-400 transition">Movies</p>
-        <p className="hover:scale-110 hover:text-red-400 transition">
+        <Link to={"/"} className="hover:scale-110 hover:text-red-400 transition">Home</Link>
+        <Link to={"/movies"} className="hover:scale-110 hover:text-red-400 transition">Movies</Link>
+        <Link to={"/theaters"} className="hover:scale-110 hover:text-red-400 transition">
           Theaters
-        </p>
-        <p className="hover:scale-110 hover:text-red-400 transition">
-          Releases
-        </p>
+        </Link>
+        <Link to={"/comingsoon"} className="hover:scale-110 hover:text-red-400 transition">
+          Coming Soon
+        </Link>
       </div>
     </div>
   );
