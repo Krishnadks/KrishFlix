@@ -30,7 +30,7 @@ const MovieCard = ({ limit }) => {
           <div className="flex mt-4 justify-between px-1 items-center">
             <button
               onClick={() => navigate(`/seat/${d.imdbID}`)}
-              className="px-6 py-2 bg-[#f84565]/80 rounded-3xl text-sm"
+              className="px-6 py-2 bg-[#f84565]/80 rounded-3xl text-sm cursor-pointer"
             >
               Buy Tickets
             </button>
