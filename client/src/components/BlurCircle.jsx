@@ -8,7 +8,7 @@ const BlurCircle = ({
 }) => {
   return (
     <div
-      className="absolute z-0 h-80 w-80 rounded-full bg-red-600/30 blur-[50px]"
+      className="absolute z-0 h-70 w-70 rounded-full bg-blue-300/20 blur-[50px]"
       style={{ top, left, right, bottom }}
     />
   );

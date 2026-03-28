@@ -2,6 +2,7 @@ import { theatersData } from "../assets/Data";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
+import BlurCircle from "../components/BlurCircle";
 
 
 const Theaters = () => {
@@ -10,14 +11,15 @@ const Theaters = () => {
   return (
     <>
       <Navbar />
-      <div className="py-30 text-gray-300 bg-[#09090b]">
-      <div className="p-4 sm:p-6 md:p-8 ">
+      <div className="py-30 text-gray-300 bg-[#09090b] overflow-hidden">
+         <BlurCircle right="0" bottom="0"/>
+      <div className="p-4 sm:p-6 md:p-8 z-5">
         <h1 className="text-xl sm:text-2xl font-medium mb-6">Nearby Theaters</h1>
         <div className="flex flex-col gap-6">
           {theatersData.map((theater) => (
             <div
               key={theater.id}
-              className="bg-gray-900 rounded-xl p-4 sm:p-6 shadow-lg"
+              className="bg-gray-900 z-5 rounded-xl p-4 sm:p-6 shadow-lg"
             >
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div>

@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import timeformat from "../lib/timeformate";
 import { PlayCircle, Ticket } from "lucide-react";
 import BlurCircle from '../components/BlurCircle';
+import Footer from '../components/Footer';
+
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -44,6 +46,7 @@ const MovieDetails = () => {
       ))}
     </div>
     </div>
+    <Footer/>
     </>
   );
 };
