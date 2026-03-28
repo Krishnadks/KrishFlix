@@ -207,11 +207,11 @@ export const theatersData = [
     rating: 4.5,
     movies: [
       {
-        title: "Dhurandhar",
+        title: "Dhurandhar: The Revenge",
         timings: ["10:00 AM", "1:30 PM", "6:00 PM"],
       },
       {
-        title: "Sinners",
+        title: "Crime 101",
         timings: ["11:00 AM", "3:00 PM", "9:00 PM"],
       },
     ],
@@ -223,11 +223,11 @@ export const theatersData = [
     rating: 4.2,
     movies: [
       {
-        title: "Avatar",
+        title: "Hoppers",
         timings: ["9:30 AM", "2:00 PM", "7:30 PM"],
       },
       {
-        title: "Zootopia 2",
+        title: "Dhurandhar: The Revenge",
         timings: ["12:00 PM", "4:30 PM"],
       },
     ],
@@ -239,9 +239,38 @@ export const theatersData = [
     rating: 4.3,
     movies: [
       {
-        title: "Sinners",
+        title: "Project Hail Mary",
         timings: ["10:15 AM", "2:45 PM", "8:00 PM"],
       },
     ],
+  },
+];
+
+
+
+export const comingSoonData = [
+  {
+    id: "toxic",
+    title: "Toxic",
+    releaseDate: "04 Jun 2026",
+    poster: "https://i.pinimg.com/736x/ad/f1/03/adf103052c769b89e9f6efe3bb8d1249.jpg",
+  },
+  {
+    id: "dune-3",
+    title: "Dune: Part Three",
+    releaseDate: "18 Dec 2026",
+    poster: "https://upload.wikimedia.org/wikipedia/en/7/7b/Dune_Part_Three_poster.jpg",
+  },
+  {
+    id: "spirit",
+    title: "Spirit",
+    releaseDate: "05 Mar 2027",
+    poster: "https://images.filmibeat.com/webp/280x383/img/popcorn/movie_posters/spirit-20260101070556-20443.jpg",
+  },
+  {
+    id: "avengers-doomsday",
+    title: "Avengers: Doomsday",
+    releaseDate: "18 Dec 2026",
+    poster: "https://i.pinimg.com/736x/d1/ff/77/d1ff77f4f237249aae4ada4df91c1cba.jpg",
   },
 ];

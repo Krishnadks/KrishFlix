@@ -12,8 +12,7 @@ const Theaters = () => {
       <Navbar />
       <div className="py-30 text-gray-300 bg-[#09090b]">
       <div className="p-4 sm:p-6 md:p-8 ">
-        <h1 className="text-xl sm:text-3xl font-medium mb-6">Nearby Theaters</h1>
-
+        <h1 className="text-xl sm:text-2xl font-medium mb-6">Nearby Theaters</h1>
         <div className="flex flex-col gap-6">
           {theatersData.map((theater) => (
             <div

@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full fixed px-4 sm:px-6 md:px-10 py-5 flex items-center justify-between text-white">
+    <div className="w-full z-20 fixed px-4 sm:px-6 md:px-10 py-5 flex items-center justify-between text-white">
       <Link to="/">
         <img src="/logo.jpeg" alt="logo" className="w-28 sm:w-32 md:w-40" />
       </Link>
