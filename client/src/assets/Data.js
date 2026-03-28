@@ -197,3 +197,51 @@ export const dummyTrailers = [
         videoUrl: 'https://youtu.be/cXymbHU5i-U'
     },
 ]
+
+
+export const theatersData = [
+  {
+    id: "pvr-lucknow",
+    name: "PVR Cinemas",
+    location: "Phoenix Palassio, Lucknow",
+    rating: 4.5,
+    movies: [
+      {
+        title: "Dhurandhar",
+        timings: ["10:00 AM", "1:30 PM", "6:00 PM"],
+      },
+      {
+        title: "Sinners",
+        timings: ["11:00 AM", "3:00 PM", "9:00 PM"],
+      },
+    ],
+  },
+  {
+    id: "inox-lucknow",
+    name: "INOX",
+    location: "Wave Mall, Lucknow",
+    rating: 4.2,
+    movies: [
+      {
+        title: "Avatar",
+        timings: ["9:30 AM", "2:00 PM", "7:30 PM"],
+      },
+      {
+        title: "Zootopia 2",
+        timings: ["12:00 PM", "4:30 PM"],
+      },
+    ],
+  },
+  {
+    id: "cinepolis-lucknow",
+    name: "Cinepolis",
+    location: "One Awadh Center, Lucknow",
+    rating: 4.3,
+    movies: [
+      {
+        title: "Sinners",
+        timings: ["10:15 AM", "2:45 PM", "8:00 PM"],
+      },
+    ],
+  },
+];
