@@ -17,7 +17,7 @@ const FeaturedSection = () => {
         <h1 className='font-medium text-gray-300'>Now Showing</h1>
         <button onClick={()=>navigate('/movies')} className=' z-10 group cursor-pointer flex gap-1'>View All <ArrowRight className='group-hover:translate-x-0.5 transition h-4 w-4 mt-1'/></button>
       </div>
-      <div className='flex flex-wrap mt-20 z-5 px-14 sm:px-6 gap-10'>
+      <div className='flex flex-wrap mt-20 z-5 px-10 sm:px-6 gap-10'>
         <MovieCard limit={4}/>
       </div>
       <div className='flex justify-center mt-20'>

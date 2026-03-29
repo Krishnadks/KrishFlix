@@ -71,7 +71,7 @@ const Navbar = () => {
         </NavLink>
       </ol>
       <div className="flex items-center gap-3 sm:gap-5">
-        <div className="relative hidden sm:block">
+        <div className="relative hidden lg:flex">
           <input
             type="text"
             value={query}
@@ -119,7 +119,7 @@ const Navbar = () => {
           </UserButton>
         )}
 
-        <button className="md:hidden">
+        <button className="lg:hidden">
           <label className="relative w-7 h-6 cursor-pointer block">
             <input
               type="checkbox"
@@ -142,7 +142,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed top-[8%] left-0 w-full h-[92%] md:hidden
+        className={`fixed top-[8%] left-0 w-full h-[92%] lg:hidden
   bg-linear-to-br from-black/60 via-black/40 to-black/60
   backdrop-blur-2xl border border-white/10
   flex flex-col items-center justify-center gap-10 text-2xl text-white z-40

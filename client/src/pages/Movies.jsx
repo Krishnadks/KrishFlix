@@ -10,7 +10,7 @@ const Movies = () => {
         <Navbar />
       </div>
       <BlurCircle bottom='0' left='-60px'/>
-      <div className='px-20 sm:px-15 py-40 bg-[#09090b] xl:px-35 text-white'>
+      <div className='px-15 sm:px-15 py-40 bg-[#09090b] xl:px-35 text-white'>
       <h1 className='font-medium'>Now Showing</h1>
       <div className='flex flex-wrap gap-8 mt-10'>
       <MovieCard/>
