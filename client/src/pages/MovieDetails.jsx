@@ -5,6 +5,7 @@ import timeformat from "../lib/timeformate";
 import { MoveLeft, PlayCircle, Ticket } from "lucide-react";
 import BlurCircle from "../components/BlurCircle";
 import Footer from "../components/Footer";
+import DateTime from "../components/DateTime";
 
 const MovieDetails = () => {
   const navigate = useNavigate();
@@ -73,6 +74,7 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+      <DateTime/>
       <Footer />
     </>
   );

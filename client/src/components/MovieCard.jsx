@@ -8,37 +8,60 @@ const MovieCard = ({ limit }) => {
   const moviesToShow = limit ? data.slice(0, limit) : data;
 
   return (
-    <div className="flex flex-wrap gap-8 z-10">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 z-10">
       {moviesToShow.map((d) => (
         <div
           key={d.imdbID}
-          className="flex flex-col justify-between py-4 px-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-66"
+          className="bg-[#111] rounded-xl overflow-hidden shadow-md 
+          hover:shadow-pink-500/20 transition duration-300 hover:-translate-y-1 flex flex-col"
         >
-          <img
-            onClick={() => navigate(`/moviedetails/${d.imdbID}`)}
-            src={d.Poster}
-            className="w-[96%] h-70 ml-[2%] object-center rounded cursor-pointer"
-          />
+          {/* 🎬 Poster */}
+          <div className="relative">
+            <img
+              onClick={() => navigate(`/moviedetails/${d.imdbID}`)}
+              src={d.Poster}
+              alt={d.Title}
+              className="w-full h-52 sm:h-60 object-cover cursor-pointer"
+            />
 
-          <h1 className="mt-2 ml-2">{d.Title}</h1>
+            {/* ⭐ Rating Badge */}
+            <div className="absolute top-2 right-2 flex items-center gap-1 bg-black/70 px-2 py-1 rounded text-xs">
+              <Star className="w-3 h-3 text-[#f84565]" />
+              {d.imdbRating}
+            </div>
+          </div>
 
-          <p className="text-sm ml-2 mt-2 text-gray-400">
-            <small className="mr-1">{d.Released}</small> | {d.Genre} |{" "}
-            <small>{timeformat(d.Runtime)}</small>
-          </p>
+          {/* 📄 Content */}
+          <div className="p-3 flex flex-col flex-1 justify-between">
+            <div>
+              <h1 className="text-sm sm:text-base font-medium line-clamp-1">
+                {d.Title}
+              </h1>
 
-          <div className="flex mt-4 justify-between px-1 items-center">
+              <p className="text-[11px] sm:text-xs text-gray-400 mt-1 line-clamp-2">
+                {d.Released} • {d.Genre}
+              </p>
+
+              <p className="text-[11px] text-gray-500 mt-1">
+                {timeformat(d.Runtime)}
+              </p>
+            </div>
+
+            {/* 🎟 Button */}
             <button
-              onClick={() => navigate(`/seat/${d.imdbID}`)}
-              className="px-6 py-2 bg-[#f84565]/80 rounded-3xl text-sm cursor-pointer"
+              onClick={() =>
+                navigate("/theaters", {
+                  state: {
+                    movieTitle: d.Title,
+                  },
+                })
+              }
+              className="mt-3 w-full py-1.5 text-xs sm:text-sm 
+              bg-linear-to-r from-[#f84565] to-pink-500 
+              rounded-full hover:opacity-90 transition"
             >
               Buy Tickets
             </button>
-
-            <p className="flex gap-2 items-center">
-              <Star className="w-5 h-5 text-[#f84565]/80" />
-              {d.imdbRating}
-            </p>
           </div>
         </div>
       ))}

@@ -6,8 +6,6 @@ export const data = [
         Released: "19 Mar 2026",
         Runtime: "230",
         Genre: "Action, Crime, Thriller",
-        Director: "Adiya Dhar",
-        Writer: "Aditya Dhar",
         Actors: "Ranveer Singh, Arjun Rampal, R. Madhavan, Sanjay Dutt",
         Plot: "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
         Language: "Hindi,Telgu, Tamil, English",
@@ -28,8 +26,6 @@ export const data = [
         Released: "13 Feb 2026",
         Runtime: "141",
         Genre: "Crime, Thriller",
-        Director: "Bart Layton",
-        Writer: "Bart Layton",
         Actors: "Chris Hemsworth, Mark Ruffalo, Halle Berry, Barry Keoghan",
         Plot: "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
         Language: "Hindi,Telgu, Tamil, English",
@@ -51,8 +47,6 @@ export const data = [
         Released: "6 Mar 2026",
         Runtime: "105",
         Genre: "Animation, Family, Science Fiction",
-        Director: "Daniel Chong",
-        Writer: "Daniel Chong",
         Actors: "Piper Curda, Bobby Moynihan, Jon Hamm, Kathy Najimy",
         Plot: "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
         Language: "Hindi,Telgu, Tamil, English",
@@ -73,8 +67,6 @@ export const data = [
         Released: "27 Feb 2026",
         Runtime: "126",
         Genre: "Drama, Romance, and History",
-        Director: "Chloé Zhao",
-        Writer: "Chloé Zhao",
         Actors: "Jessie Buckley, Paul Mescal, Emily Watson, Joe Alwyn",
         Plot: "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
         Language: "Hindi, English",
@@ -95,8 +87,6 @@ export const data = [
         Released: "27 Feb 2026",
         Runtime: "136",
         Genre: "Romance and Drama",
-        Director: "Emerald Fennell",
-        Writer: "Emerald Fennell",
         Actors: "Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver",
         Plot: "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
         Language: "Hindi, English",
@@ -117,8 +107,6 @@ export const data = [
         Released: "6 Mar 2026",
         Runtime: "110",
         Genre: "Action, Science Fiction, and Thriller",
-        Director: "Patrick Hughes",
-        Writer: "Patrick Hughes",
         Actors: "Alan Ritchson, Dennis Quaid, Stephan James, Jai Courtney",
         Plot: "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
         Language: "Hindi, English",
@@ -139,8 +127,6 @@ export const data = [
         Released: "26 Mar 2026",
         Runtime: "157",
         Genre: "Science Fiction, Adventure, and Mystery",
-        Director: "Phil Lord",
-        Writer: "Drew Goddard",
         Actors: "Ryan Gosling, Sandra Hüller, James Ortiz, Lionel Boyce",
         Plot: "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
         Language: "Hindi, English",
@@ -161,8 +147,6 @@ export const data = [
         Released: "10 Apr 2026",
         Runtime: "173",
         Genre: "Horror and Comedy",
-        Director: "Priyadarshan",
-        Writer: "Abhilash Nair",
         Actors: "Akshay Kumar, Wamiqa Gabbi, Paresh Rawal, Tabu",
         Plot: "Bhooth Bangla is an upcoming horror-comedy film starring Akshay Kumar, directed by Priyadarshan.",
         Language: "Hindi, English",
@@ -274,3 +258,49 @@ export const comingSoonData = [
     poster: "https://i.pinimg.com/736x/d1/ff/77/d1ff77f4f237249aae4ada4df91c1cba.jpg",
   },
 ];
+
+
+export const seatLayouts = {
+  "pvr-lucknow": {
+    rows: ["A","B","C","D","E","F"],
+    cols: 10,
+    pricing: {
+      A: 150,
+      B: 150,
+      C: 200,
+      D: 200,
+      E: 300,
+      F: 300
+    }
+  },
+
+  "inox-lucknow": {
+    rows: ["A","B","C","D"],
+    cols: 8,
+    pricing: {
+      A: 120,
+      B: 150,
+      C: 180,
+      D: 220
+    }
+  },
+
+  "cinepolis-lucknow": {
+    rows: ["A","B","C","D","E","F","G","H"],
+    cols: 12,
+    pricing: {
+      A: 100,
+      B: 120,
+      C: 150,
+      D: 180,
+      E: 200,
+      F: 220,
+      G: 250,
+      H: 300
+    }
+  }
+};
+
+
+
+
