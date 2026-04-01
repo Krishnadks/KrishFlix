@@ -11,7 +11,7 @@ const Theaters = () => {
     <>
       <Navbar />
 
-      <div className="py-30 text-gray-300 bg-[#09090b] overflow-hidden">
+      <div className="py-30 h-[200vh] text-gray-300 bg-[#09090b] overflow-hidden">
         <BlurCircle right="0" bottom="0" />
 
         <div className="p-4 sm:p-6 md:p-8 z-5">

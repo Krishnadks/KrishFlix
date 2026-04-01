@@ -11,7 +11,7 @@ const ComingSoon = () => {
   return (
     <>
     <Navbar/>
-      <div className="py-40 text-gray-300 bg-[#09090b] overflow-hidden">
+      <div className="py-40 h-[200vh] text-gray-300 bg-[#09090b] overflow-hidden">
         <BlurCircle bottom="0" left="-20px"/>
         <div className=" px-20 lg:px-24 xl:px-30">
           <h1 className="text-xl sm:text-2xl font-medium mb-15">Coming Soon 🎥 </h1>
