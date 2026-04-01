@@ -18,7 +18,7 @@ const MovieCard = ({ limit }) => {
           {/* 🎬 Poster */}
           <div className="relative">
             <img
-              onClick={() => navigate(`/moviedetails/${d.imdbID}`)}
+              onClick={() => {navigate(`/moviedetails/${d.imdbID}`); window.scrollTo(0,0);}}
               src={d.Poster}
               alt={d.Title}
               className="w-full h-52 sm:h-60 object-cover cursor-pointer"
