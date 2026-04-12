@@ -74,7 +74,6 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
-      <DateTime/>
       <Footer />
     </>
   );
